@@ -1,0 +1,33 @@
+---
+layout: default
+title: "Papers by Subfield"
+permalink: /papers/
+header_image: /assets/images/papers-header.jpg
+---
+<!--
+  The papers themselves are NOT in this file.
+  To add or change a paper, edit _data/papers.yml (see README.md).
+  The text below the list of subfields is generated automatically.
+-->
+
+<p>All papers in this list have a <strong>female-identifying</strong> (at time of publication) first or corresponding author.</p>
+
+<ul class="subfield-index">
+{% for group in site.data.papers %}
+  <li><a href="#{{ group.subfield | slugify }}">{{ group.subfield }}</a></li>
+{% endfor %}
+</ul>
+
+{% for group in site.data.papers %}
+<h2 id="{{ group.subfield | slugify }}">{{ group.subfield }}</h2>
+<ul class="paper-list">
+  {% for paper in group.papers %}
+  <li class="paper">
+    {% if paper.link %}<a href="{{ paper.link }}"><em>{{ paper.title }}</em></a>{% else %}<em>{{ paper.title }}</em>{% endif %}{% if paper.authors %}{% assign last_char = paper.title | slice: -1 %}{% unless last_char == "?" or last_char == "!" or last_char == "." %}.{% endunless %}
+    {% for author in paper.authors %}{% if author.name %}{% if author.highlight %}<strong>{% endif %}{% if author.link %}<a href="{{ author.link }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.highlight %}</strong>{% endif %}{% else %}{{ author }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %}{% if forloop.length > 2 %},{% endif %} and {% else %}, {% endif %}{% endunless %}{% endfor %}.{% endif %}
+    {% if paper.venue %}<span class="venue">{{ paper.venue | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% endif %}
+    {% if paper.note %}<span class="note">{{ paper.note | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

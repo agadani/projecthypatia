@@ -1,0 +1,74 @@
+:root {
+  --text: #222;
+  --muted: #555;
+  --accent: #2c5d73;
+  --bg: #fff;
+  --rule: #e2e2e2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+a { color: var(--accent); }
+
+/* Header and menu */
+.site-header { background: var(--accent); color: #fff; }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding-top: 12px; padding-bottom: 12px; }
+.site-title { color: #fff; font-weight: 700; font-size: 1.2em; text-decoration: none; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.site-header nav a { color: #fff; text-decoration: none; opacity: 0.85; font-size: 0.95em; }
+.site-header nav a:hover, .site-header nav a.current { opacity: 1; text-decoration: underline; }
+
+/* Large image header */
+.hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.45); }
+.hero-text { position: relative; color: #fff; padding: 32px 16px; }
+.hero-text h1 { margin: 0; font-size: 2.6em; }
+.hero-text .subtitle { margin: 4px 0 0; font-size: 1.5em; }
+
+/* Banner block inside a page */
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 40px 16px;
+  text-align: center;
+  margin: 40px 0 24px;
+}
+.banner a { color: #fff; font-size: 1.6em; font-weight: 700; text-decoration: none; text-shadow: 0 1px 3px rgba(0,0,0,0.6); }
+
+main { padding-top: 24px; padding-bottom: 48px; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 1.8em; border-bottom: 1px solid var(--rule); padding-bottom: 4px; }
+
+/* Papers */
+.subfield-index { padding-left: 1.2em; }
+.paper-list { list-style: square; padding-left: 1.2em; }
+.paper-list li { margin-bottom: 1em; }
+.paper .venue, .paper .note { display: block; color: var(--muted); }
+
+.site-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9em; padding: 16px 0 32px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .hero { min-height: 220px; }
+  .hero-text h1 { font-size: 2em; }
+}

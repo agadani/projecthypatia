@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Reading Groups"
+permalink: /reading-groups/
+---
+<!--
+  The groups themselves are NOT in this file.
+  To add or change a group, edit _data/groups.yml (see README.md).
+-->
+
+<ul>
+{% for group in site.data.groups %}
+  <li>
+    {% if group.link %}<a href="{{ group.link }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% if group.description %}: {{ group.description | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+  </li>
+{% endfor %}
+  <li>To request your group be added to this list, please e-mail <a href="mailto:avani@mathcs.emory.edu">avani@mathcs.emory.edu</a>, and begin the subject with [Hypatia].</li>
+</ul>

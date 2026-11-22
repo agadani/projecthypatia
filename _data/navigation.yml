@@ -1,0 +1,11 @@
+# Links in the site's top menu, in order.
+- title: "Home"
+  url: "/"
+- title: "Suggested Papers by Subfield"
+  url: "/papers/"
+- title: "Start a Hypatia Reading Group"
+  url: "/start-a-group/"
+- title: "FAQ"
+  url: "/faq/"
+- title: "Reading Groups"
+  url: "/reading-groups/"

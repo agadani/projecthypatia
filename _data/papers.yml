@@ -1,0 +1,287 @@
+# Suggested papers, grouped by subfield.
+# See README.md ("Adding a paper") for instructions.
+#
+# Each paper looks like this (copy, paste, and fill in):
+#
+#   - title: "Title of the paper"
+#     link: "https://link-to-the-pdf-or-doi"       # optional
+#     authors:
+#       - name: "A. Author"                         # an author to highlight (shown in bold)
+#         link: "https://her-homepage"              # optional
+#         highlight: true
+#       - "B. Coauthor"                             # other authors: just the name
+#     venue: "Conference or journal, year."
+#     note: "Optional extra sentence."              # optional
+#
+# Text in venue and note may use Markdown, e.g. [link text](https://...) or **bold**.
+
+- subfield: "Algorithms / Theory"
+  papers:
+    - title: "On a theory of computation over the real numbers; NP completeness, recursive functions and universal machines"
+      link: "https://projecteuclid.org/download/pdf_1/euclid.bams/1183555121"
+      authors:
+        - name: "L. Blum"
+          link: "https://en.wikipedia.org/wiki/Lenore_Blum"
+          highlight: true
+        - "M. Shub"
+        - "S. Smale"
+      venue: "Proceedings of the 29th Annual Symposium on Foundations of Computer Science, 1988."
+
+    - title: "A Simple Unpredictable Pseudo-Random Number Generator"
+      link: "https://www.math.tamu.edu/~rojas/bbs.pdf"
+      authors:
+        - name: "L. Blum"
+          link: "https://en.wikipedia.org/wiki/Lenore_Blum"
+          highlight: true
+        - "M. Blum"
+        - "M. Shub"
+      venue: "SIAM J. Computing. 15 (2): 364-383. 1986."
+
+    - title: "The Knowledge Complexity of Interactive Proof Systems"
+      link: "http://crypto.cs.mcgill.ca/~crepeau/COMP647/2007/TOPIC02/GMR89.pdf"
+      authors:
+        - name: "S. Goldwasser"
+          link: "https://en.wikipedia.org/wiki/Shafi_Goldwasser"
+          highlight: true
+        - "S. Micali"
+        - "C. Rackoff"
+      venue: "*[SIAM J. Computing.](https://en.wikipedia.org/wiki/SIAM_Journal_on_Computing)* **18** (1): 186–208. 1989."
+      note: "Description: This paper introduced the concept of [zero knowledge](https://en.wikipedia.org/wiki/Zero-knowledge_proof)."
+
+- subfield: "Machine Learning / Artificial Intelligence"
+  papers:
+    - title: "Imagenet: A Large-scale Hierarchical Image Database"
+      link: "https://www.researchgate.net/profile/Li_Jia_Li/publication/221361415_ImageNet_a_Large-Scale_Hierarchical_Image_Database/links/00b495388120dbc339000000/ImageNet-a-Large-Scale-Hierarchical-Image-Database.pdf"
+      authors:
+        - "J. Deng"
+        - "W. Dong"
+        - "R. Socher"
+        - name: "J. Li"
+          link: "http://vision.stanford.edu/lijiali/"
+          highlight: true
+        - "K. Li, Kai"
+        - name: "L. Fei-Fei"
+          link: "https://en.wikipedia.org/wiki/Fei-Fei_Li"
+          highlight: true
+      venue: "IEEE Conference on Computer Vision and Pattern Recognition. 2009."
+
+    - title: "Learning Curves: Asymptotic Values and Rate of Convergence"
+      link: "https://papers.nips.cc/paper/803-learning-curves-asymptotic-values-and-rate-of-convergence.pdf"
+      authors:
+        - name: "C. Cortes"
+          link: "https://en.wikipedia.org/wiki/Corinna_Cortes"
+          highlight: true
+        - "L. D. Jackel"
+        - name: "S. A. Solla"
+          link: "https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=16584"
+          highlight: true
+        - "V. Vapnik"
+        - "J. S. Denker"
+      venue: "Advances in Neural Information Processing Systems. 1994."
+
+    - title: "Learning probabilistic models of relational structure"
+      link: "http://ai.stanford.edu/~koller/Papers/Getoor+al:ICML01.pdf"
+      authors:
+        - name: "L. Getoor"
+          link: "https://en.wikipedia.org/wiki/Lise_Getoor"
+          highlight: true
+        - "N. Friedman"
+        - name: "D. Koller"
+          link: "https://en.wikipedia.org/wiki/Daphne_Koller"
+          highlight: true
+        - "B. Taskar"
+      venue: "ICML, 2001."
+
+    - title: "Support vector machine active learning with applications to text classification"
+      link: "http://www.jmlr.org/papers/volume2/tong01a/tong01a.pdf"
+      authors:
+        - "S. Tong"
+        - name: "D. Koller"
+          link: "https://en.wikipedia.org/wiki/Daphne_Koller"
+          highlight: true
+      venue: "Journal of Machine Learning Research, 2001."
+
+- subfield: "Systems / Networks"
+  papers:
+    - title: "An algorithm for distributed computation of a spanning tree in an extended LAN"
+      link: "http://people.eecs.berkeley.edu/~sylvia/cs268-2013/papers/spanning-tree.pdf"
+      authors:
+        - name: "R. Perlman"
+          link: "https://en.wikipedia.org/wiki/Radia_Perlman"
+          highlight: true
+      venue: "ACM SIGCOMM Computer Communication Review. 1985"
+
+    - title: "An Implementation of a Log-Structured File System for UNIX"
+      link: "https://www.usenix.org/legacy/publications/library/proceedings/sd93/seltzer.pdf"
+      authors:
+        - name: "M.I. Seltzer"
+          link: "https://en.wikipedia.org/wiki/Margo_Seltzer"
+          highlight: true
+        - "K. Bostic"
+        - "M.K. McKusick"
+        - "C. Staelin"
+      venue: "Proceedings of the USENIX Winter 1993 Conference Proceedings on USENIX Winter. 1993."
+
+    - title: "Generalized FLP impossibility result for t-resilient asynchronous computations"
+      link: "https://dl.acm.org/doi/abs/10.1145/167088.167119"
+      authors:
+        - name: "E. Borowsky"
+          link: "https://www.akamai.com/us/en/about/leadership/executive-team/management-liz-borowsky.jsp"
+          highlight: true
+        - "E.Gafni"
+      venue: "Proceedings of the twenty-fifth annual ACM symposium on Theory of Computing. 1993."
+
+    - title: "Practical Byzantine Fault Tolerance"
+      link: "http://pmg.csail.mit.edu/papers/osdi99.pdf"
+      authors:
+        - "M. Castro"
+        - name: "B. Liskov"
+          link: "https://en.wikipedia.org/wiki/Barbara_Liskov"
+          highlight: true
+      venue: "Proceedings of the Third Symposium on Operating Systems Design and Implementation. 1999."
+
+    - title: "Continuous profiling: where have all the cycles gone?"
+      link: "http://ww.waldspurger.org/carl/papers/dcpi-src-97016a.pdf"
+      authors:
+        - name: "J.M. Anderson"
+          link: "https://dlp5.acm.org/author_page.cfm?id=81452613603"
+          highlight: true
+        - "L.M. Berc"
+        - "J. Dean"
+        - "S. Ghemawat"
+        - name: "M. Henzinger"
+          link: "https://en.wikipedia.org/wiki/Monika_Henzinger"
+          highlight: true
+        - "S.A. Leung"
+        - "Shun-Tak A"
+        - "R.L Sites"
+        - "M.T. Vandevoorde"
+        - "C. Waldspurger"
+        - "W.E. Weihl"
+      venue: "ACM Transactions on Computer Systems (TOCS). 1997."
+
+- subfield: "Databases"
+  papers:
+    - title: "SimRank: a measure of structural-context similarity"
+      link: "http://ilpubs.stanford.edu:8090/508/1/2001-41.pdf"
+      authors:
+        - "G. Jeh"
+        - name: "J. Widom"
+          link: "https://en.wikipedia.org/wiki/Jennifer_Widom"
+          highlight: true
+      venue: "Proceedings of the 8th ACM SIGKDD international conference on Knowledge discovery and data mining. 2002."
+
+    - title: "DisC Diversity: Result Diversification based on Dissimilarity and Coverage"
+      link: "https://arxiv.org/pdf/1208.3533.pdf"
+      authors:
+        - name: "M. Drosou"
+          link: "http://users.cs.uoi.gr/~mdrosou/indexx.php"
+          highlight: true
+        - name: "E. Pitoura"
+          link: "http://www.cs.uoi.gr/~pitoura/"
+          highlight: true
+      venue: "Proceedings of the VLDB Endowment, 2012."
+
+    - title: "Weaving Relations for Cache Performance"
+      link: "http://www.vldb.org/conf/2001/P169.pdf"
+      authors:
+        - name: "A. Ailamaki"
+          link: "https://people.epfl.ch/anastasia.ailamaki"
+          highlight: true
+        - "D.J. DeWitt"
+        - "M.D. Hill"
+        - "M. Skounakis"
+      venue: "VLDB, 2001."
+
+- subfield: "Programming Languages"
+  papers:
+    - title: "Programming with abstract data types"
+      link: "http://web.cs.iastate.edu/~hridesh/teaching/362/07/01/papers/p50-liskov.pdf"
+      authors:
+        - name: "B. Liskov"
+          link: "https://en.wikipedia.org/wiki/Barbara_Liskov"
+          highlight: true
+        - "S. Ziles"
+      venue: "ACM SIGPLAN Notices, 1974."
+
+    - title: "An Axiomatic Proof Technique for Parallel Programs I"
+      link: "http://staff.ustc.edu.cn/~xyfeng/reading/OwickiGries.pdf"
+      authors:
+        - name: "S. Owicki"
+          link: "https://en.wikipedia.org/wiki/Susan_Owicki"
+          highlight: true
+        - "D. Gries"
+      venue: "Acta informatica, 1976."
+      note: "Winner of the 1977 ACM Award for best paper in programming languages and systems."
+
+    - title: "Finding Patterns Common to a Set of Strings"
+      link: "http://www.sciencedirect.com/science/article/pii/0022000080900410/pdf?md5=c3534f6c086df22fbf814b12984fab5e&pid=1-s2.0-0022000080900410-main.pdf"
+      authors:
+        - name: "D. Angluin"
+          link: "https://en.wikipedia.org/wiki/Dana_Angluin"
+          highlight: true
+      venue: "Proceedings of the eleventh annual ACM symposium on Theory of computing, 1979"
+
+    - title: "Inductive Inference of Formal Languages from Positive Data"
+      link: "http://www-personal.umich.edu/~yinw/papers/Angluin80.pdf"
+      authors:
+        - name: "D. Angluin"
+          link: "https://en.wikipedia.org/wiki/Dana_Angluin"
+          highlight: true
+      venue: "Information and Control, 1980."
+
+    - title: "Control flow analysis"
+      link: "http://www.cs.columbia.edu/~suman/secure_sw_devel/p1-allen.pdf"
+      authors:
+        - name: "F.E. Allen"
+          link: "https://en.wikipedia.org/wiki/Frances_E._Allen"
+          highlight: true
+      venue: "ACM SIGPLAN Notices, 1970"
+
+    - title: "gprof: A Call Graph Execution Profiler"
+      link: "https://docs.freebsd.org/44doc/psd/18.gprof/paper.pdf"
+      authors:
+        - name: "S.L. Graham"
+          link: "https://en.wikipedia.org/wiki/Susan_L._Graham"
+          highlight: true
+        - "P.B. Kessler"
+        - "M. K. McKusick"
+      venue: "Proceedings of the 1982 SIGPLAN Symposium on Compiler Construction, 1982."
+
+- subfield: "Robotics"
+  papers:
+    - title: "Programmable Self-Assembly Using Biologically-Inspired Multiagent Control"
+      link: "https://ssr.seas.harvard.edu/files/ssr/files/aamas02-nagpal.pdf"
+      authors:
+        - name: "R. Nagpal"
+          link: "https://en.wikipedia.org/wiki/Radhika_Nagpal"
+          highlight: true
+      venue: "Intl. Conf. on Autonomous Agents and Multi-Agent Systems, July 2002."
+
+    - title: "Collective Construction Using Lego Robots"
+      link: "https://www.aaai.org/Papers/Workshops/2006/WS-06-15/WS06-15-011.pdf"
+      authors:
+        - name: "C. Schuil"
+          highlight: true
+        - "M. Valente"
+        - "J. Werfel"
+        - name: "R. Nagpal"
+          link: "https://en.wikipedia.org/wiki/Radhika_Nagpal"
+          highlight: true
+      venue: "National Conference on Artificial Intelligence [(AAAI)](http://www.aaai.org/Conferences/AAAI/aaai06.php), 2006."
+      note: "Received Technical Innovation Award for \"elegant connection of theory and design\"."
+
+- subfield: "Security"
+  papers:
+    - title: "Differential Privacy"
+      link: "http://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/dwork.pdf"
+      authors:
+        - name: "C. Dwork"
+          link: "https://en.wikipedia.org/wiki/Cynthia_Dwork"
+          highlight: true
+      venue: "International Colloquium on Automata, Languages, and Programming, 2006."
+
+- subfield: "Uncategorized"
+  papers:
+    # The Google Site listed only this title, with no link, authors, or venue.
+    - title: "Concepts and experiments in computational reflection"

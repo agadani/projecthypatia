@@ -1,0 +1,13 @@
+# Reading groups listed on the "Reading Groups" page.
+# See README.md ("Adding a reading group") for instructions.
+#
+# Each group looks like this (copy, paste, and fill in):
+#
+#   - name: "Name of the group"
+#     link: "https://group-website-or-mailing-list"   # optional
+#     description: "Optional: where/when it meets, who to contact."
+#
+# The description may use Markdown, e.g. [link text](https://...).
+
+- name: "Emory Women in CS"
+  link: "https://groups.google.com/forum/#!forum/emory-wics-readers"
