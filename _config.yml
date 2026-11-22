@@ -1,10 +1,10 @@
 title: "Project Hypatia"
 description: "Women Who Do: foundational and current computer science research led by women."
 
-# The site is served from https://agadani.github.io/projecthypatia/
-# If you later use a custom domain, set baseurl to "".
-baseurl: "/projecthypatia"
-url: "https://agadani.github.io"
+# The site is served from https://projecthypatia.org/ (domain set in the CNAME file).
+# If the site is ever served from https://agadani.github.io/projecthypatia/ instead, set baseurl to "/projecthypatia".
+baseurl: ""
+url: "https://projecthypatia.org"
 
 markdown: kramdown
 

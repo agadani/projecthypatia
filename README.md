@@ -1,6 +1,6 @@
 # Project Hypatia website
 
-Source for https://agadani.github.io/projecthypatia/ (moved from the Google Site at https://sites.google.com/view/projecthypatia/home).
+Source for https://projecthypatia.org/ (moved from the Google Site at https://sites.google.com/view/projecthypatia/home).
 
 GitHub Pages builds the site automatically from this repository. Any change committed to the `main` branch is live about a minute later. You can make every edit below directly on github.com: open the file, click the pencil icon ("Edit this file"), make the change, and click "Commit changes".
 
